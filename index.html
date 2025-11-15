@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaultofcodes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333333;
+
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+
+
+        }
+
+        .heading {
+            font-family: "Roboto Slab";
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ffffff;
+            border-bottom: 3px solid #007bff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+        }
+
+        .heading h1 {
+            font-size: 2.5em;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .heading h3 {
+            font-size: 1.2em;
+            color: #555555;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .heading p {
+            font-size: 1em;
+            color: #777777;
+        }
+
+
+
+        .cards {
+           
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 30px;
+            padding: 20px 0;
+            min-height: auto;
+            align-items: stretch;
+           
+
+        }
+
+        .boxes {
+            
+            height: 42vh;
+            width: 40vw;
+            margin: 10px auto;
+            font-family: "Rubik", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+           
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+           
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        .boxes:hover {
+            transform: translateY(-5px);
+            
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .boxes ul {
+            list-style: none;
+            
+            font-size: 22px;
+            font-weight: 500;
+
+
+        }
+
+        .boxes h2 {
+            text-align: center;
+            font-family: "Rubik", sans-serif;
+            font-size: 1.5em;
+            color: #007bff;
+
+
+        }
+
+        .boxes ul li {
+            font-family: "Inter", sans-serif;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .btn {
+            padding: 14px 40px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.6);
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        @media (max-width: 810px) {
+            .cards {
+                grid-template-columns: 1fr;
+                gap: 10px;
+
+            }
+
+            .boxes {
+                width: 100%;
+            }
+
+            .boxes h2 {
+                font-size: 26px;
+
+            }
+
+            .boxes ul {
+                font-size: 28px;
+                font-weight: 500;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+            .container {
+                padding: 10px;
+            }
+
+            .heading {
+                padding: 20px 10px;
+            }
+
+            .heading h1 {
+                font-size: 1.8em;
+            }
+
+            .boxes {
+                width: 90%;
+            }
+
+            .boxes ul {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="heading">
+            <h1>Kickstart Your Career with the Right Internship</h1>
+            <h3>Work on Real-World Projects & Build Your Developer Portfolio</h3>
+            <p>Explore top opportunities, gain real-world experience, and grow your professional network.</p>
+        </div>
+
+        <div class="cards">
+            <div class="boxes box1">
+                <h2>Web Development Internship Program</h2>
+                <ul>
+                    <li>Duration: 1month/2months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: - </li>
+                    <li>Start Date: 05/11/2025</li>
+                </ul>
+
+                <button class="btn"><a
+                        href="https://www.vaultofcodes.in/courses/506813?utm_source%3Dother%26utm_medium%3Dstudent-course-referral%26utm_campaign%3Dcourse-overview-webapp">View
+                        Details</a></button>
+            </div>
+
+            <div class="boxes box2">
+                <h2>App Development Internship Program</h2>
+                <ul>
+                    <li>Duration: 1month/2months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: - </li>
+                    <li>Start Date: 05/11/2025</li>
+                </ul>
+
+                <button class="btn"><a
+                        href="https://www.vaultofcodes.in/courses/649395?utm_source%3Dother%26utm_medium%3Dstudent-course-referral%26utm_campaign%3Dcourse-overview-webapp">View
+                        Details</a></button>
+
+            </div>
+
+            <div class="boxes box3">
+                <h2>Python Programming Internship Program</h2>
+                <ul>
+                    <li>Duration: 1month/2months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: - </li>
+                    <li>Start Date: 05/11/2025</li>
+                </ul>
+
+                <button class="btn"><a
+                        href="https://www.vaultofcodes.in/courses/506722?utm_source%3Dother%26utm_medium%3Dstudent-course-referral%26utm_campaign%3Dcourse-overview-webapp">View
+                        Details</a></button>
+
+            </div>
+
+            <div class="boxes box4">
+                <h2>Java Programming Internship Program</h2>
+                <ul>
+                    <li>Duration: 1month/2months</li>
+                    <li>Location: Virtual</li>
+                    <li>Stipend: - </li>
+                    <li>Start Date: 05/11/2025</li>
+                </ul>
+
+                <button class="btn"><a
+                        href="https://www.vaultofcodes.in/courses/506804?utm_source%3Dother%26utm_medium%3Dstudent-course-referral%26utm_campaign%3Dcourse-overview-webapp">View
+                        Details</a></button>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const button = document.querySelector(".btn")
+    button.addEventListener('click', () => {
+        alert("Welcome to VaultofCodes , Click Ok to move to website")
+    })
+</script>
+
+</html>
